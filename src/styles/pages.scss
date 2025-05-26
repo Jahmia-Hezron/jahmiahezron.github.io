@@ -1,0 +1,91 @@
+.HomePage, 
+.AboutPage, 
+.ProjectsPage, 
+.TechStackPage, 
+.ExperiencePage, 
+.ContactPage {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 6.5rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 90vh;
+}
+
+.AboutPage, 
+.ExperiencePage {
+    .Image {
+        width: 45%;
+    }
+    .Text {
+        width: 50%;
+        justify-content: start;
+    }
+}
+
+.AboutPage {
+    .Image {
+        height: 65%;
+    }
+}
+
+.ContactPage {
+    .Content {
+        justify-content: center;
+        .Text {
+            width: 100%;
+            align-items: center;
+        }
+    }
+}
+
+.Content, 
+.Image, 
+.Text {
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Image {
+    align-items: flex-end !important;
+    justify-content: center;
+    background-color: black;
+    object-fit: cover;
+    width:55%;
+}
+
+.Text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 40%;
+    height: auto;
+}
+
+.Blockquote {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: stretch;
+    margin-bottom: 5rem;
+}
+
+.Spine {
+    padding: 0.2rem;
+    margin-right: 2rem;
+    background-color: black;
+    border: solid 0.1rem white;
+    border-radius: 2rem;
+}
+
+@media (max-width: 1080px) {
+    .Text, 
+    .Image {
+        width: 100%;
+        height: auto;
+    }
+}
