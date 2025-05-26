@@ -2,7 +2,7 @@
 
 This is my personal developer portfolio, built using **React** and **TypeScript**, and styled with **SCSS**. It showcases my background, tech stack, projects, and professional journey as a software engineer based in Kampala, Uganda.
 
-🔗 **Live Demo:** [https://your-github-username.github.io/your-repo-name](https://your-github-username.github.io/your-repo-name)
+🔗 **Live Demo:** [(https://github.com/Jahmia-Hezron/jahmiahezron.github.io)]
 
 ---
 
