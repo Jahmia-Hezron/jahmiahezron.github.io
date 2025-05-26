@@ -90,7 +90,7 @@ I’m Jahmia Hezron, a full-stack software engineer passionate about building di
 
 - Portfolio: [your-portfolio-link]
 - LinkedIn: [your-linkedin]
-- GitHub: [[your-github](https://github.com/Jahmia-Hezron]
+- GitHub: [https://github.com/Jahmia-Hezron]
 
 ---
 
