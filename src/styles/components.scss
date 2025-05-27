@@ -1,4 +1,8 @@
-.navbar, .navbar-start, .navbar-end, .navbar-items {
+.navbar, 
+.navbar-start, 
+.navbar-end, 
+.navbar-items, 
+.TechStackCard {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,6 +10,29 @@
     align-content: center;
     
 
+}
+.navbar-end, 
+.project-card {
+    color: white;
+    color: white;
+    background-color: black;
+    background-color: black;
+}
+
+.project-card, 
+.TechStackCard {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: solid 0.08rem black;
+    border-radius: 0.5rem;
+    .Image {
+        object-fit: cover;
+        display: block;
+    }
+     .Text {
+        margin: 0 !important;
+        padding: 1rem;
+    }
 }
 .navbar {
     padding: 1rem 10%;
@@ -26,7 +53,55 @@ a {
 }
 .navbar-end {
     padding: 1rem 4rem;
-    color: white;
     font-weight: bolder;
-    background-color: black;
+   
+}
+.project-card {
+    width: 24rem;
+    height: 26rem;
+    overflow: hidden;
+    position: relative;
+    .Image {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+    }
+    .Text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24rem !important;
+        height: 26rem !important;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    &:hover {
+        .Image {
+            transform: scale(1.05);
+        }
+        .Text {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.TechStackCard {
+    width: 20rem;
+    height: 18rem;
+    flex-direction: column;
+    justify-content: space-around;
+    .Image {
+        width: 40%;
+        height: 40%;
+        border:  inherit;
+        border-radius: 100%;
+
+    }
+}
+
+.IconButton {
+    padding: 2rem;
 }
