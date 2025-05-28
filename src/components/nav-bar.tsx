@@ -1,23 +1,38 @@
-
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Nav_bar = () => {
-    return (
-      < nav className="navbar">
-        <div className="navbar-start">
-           <ul className="navbar-items p-0">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/tech-stack">Tech Stack</a></li>
-            <li><a href="/experience">Experience</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <div className="navbar-end">
-          <a href="/" className="btn btn-ghost normal-case text-xl">RESUME</a>
-        </div>
-      </nav>
-    );
-}
+  const location = useLocation();
+
+  const links = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/tech-stack', label: 'Tech Stack' },
+    { path: '/experience', label: 'Experience' },
+    { path: '/contact', label: 'Contact' },
+  ];
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-start">
+        <ul className="navbar-items p-0">
+          {links.map(({ path, label }) => (
+            <li key={path}>
+              <NavLink
+                to={path}
+                className={({ isActive }) => (isActive ? 'active-link' : '')}
+              >
+                {label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a href="/" className="btn btn-ghost normal-case text-xl">RESUME</a>
+      </div>
+    </nav>
+  );
+};
 
 export default Nav_bar;

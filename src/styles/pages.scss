@@ -7,10 +7,16 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    position: relative;
     padding-top: 6.5rem;
     padding-right: 10%;
     padding-left: 10%;
-    height: 90vh;
+    min-height: 90vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
 }
 
 .AboutPage, 
@@ -93,6 +99,7 @@
     padding-top: 4rem;
     flex-wrap: wrap;
     align-content: baseline;
+    box-shadow: none;
 }
 @media (max-width: 1080px) {
     .AboutPage, 

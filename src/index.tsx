@@ -1,37 +1,48 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import './styles/pages.scss'
-import './styles/components.scss'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
-import Nav_bar from './components/nav-bar';
+import './styles/index.scss';
+import './styles/pages.scss';
+import './styles/components.scss';
+
 import Home from './pages/home';
 import About from './pages/about';
+import Contact from './pages/contact';
 import Projects from './pages/projects';
 import Tech_stack from './pages/tech-stack';
 import Experience from './pages/experience';
-import Contact from './pages/contact';
+
+import MainLayout from './main-layout';
 import reportWebVitals from './reportWebVitals';
+import { NavigationProvider } from './scripts/navigation-context';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const App = () => {
+  const location = useLocation();
 
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Nav_bar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/tech-stack" element={<Tech_stack />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/tech-stack" element={<Tech_stack />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
       </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+    </AnimatePresence>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+  <BrowserRouter>
+    <NavigationProvider>
+      <App />
+    </NavigationProvider>
+  </BrowserRouter>
 );
 
 reportWebVitals();
