@@ -4,99 +4,122 @@
 .TechStackPage, 
 .ExperiencePage, 
 .ContactPage {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: #F4F4F7;
-    position: relative;
-    padding-top: 6.5rem;
-    padding-right: 10%;
-    padding-left: 10%;
-    min-height: 90vh;
-    border-radius: 0.5rem;
-    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1;
-    transition: all 0.4s ease;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #F4F4F7;
+  position: relative;
+  padding-top: 6.5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  min-height: 90vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease;
 }
 
 .ContactPage, 
 .ProjectsPage, 
 .TechStackPage {
-    .Content {
-        justify-content: center;
-        .Text {
-            width: 100%;
-            align-items: center;
-            margin: 5rem 0;
-        }
-    }
-}
-
-.HomePage {
+  .Content {
+    justify-content: center;
+    
     .Text {
-        .CtaButtons {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-            padding: 2rem 0;
-            width: 100%;
-            .ViewMyWork {
-                border: #00D4FF solid 0.2rem !important;
-                background-color: transparent;
-                color: #00D4FF;
-            }
-        }
+      width: 100%;
+      align-items: center;
+      margin: 5rem 0;
     }
-    .Image {
-        align-items: flex-end !important;
+  }
+}
+.ProjectsPage, 
+.TechStackPage {
+  .Content {
+    justify-content: space-around;
+  }
+
+}
+.HomePage {
+  .Text {
+    .CtaButtons {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 2rem 0;
+      width: 100%;
+      
+      .ViewMyWork {
+        border: #00D4FF solid 0.2rem !important;
+        background-color: transparent;
+        color: #00D4FF;
+      }
     }
+  }
+  .Image {
+    align-items: flex-end !important;
+  }
 }
 
 .AboutPage {
-    background-color: #E0E0E0;
-    .Image {
-        width: 45%;
-        img {
-            border: solid 0.08rem transparent;
-            border-radius: 0.8rem;
-            box-shadow: #2121216f  0.1rem 0.5rem 0.6rem;
-        }
+  background-color: #E0E0E0;
+  
+  .Image {
+    width: 45%;
+
+    img {
+      border: solid 0.08rem transparent;
+      border-radius: 0.8rem;
+      box-shadow: #2121216f  0.1rem 0.5rem 0.6rem;
     }
-    .Text {
-        width: 50%;
-        justify-content: start;
-        margin: 0 !important;
+  }
+
+  .Text {
+    width: 50%;
+    justify-content: start;
+    margin: 0 !important;
+  }
+}
+
+.ProjectsPage {
+  .ViewMyWork {
+    margin-top: 1rem;
+    border: #00D4FF solid 0.2rem !important;
+    background-color: transparent;
+    color: #00D4FF;
+  }
+  
+  .Image {
+    img {
+      height: inherit;
     }
+  }
 }
 
 .ExperiencePage {
-    .Text {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
+  .Text {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .TechStackPage {
-    .Content {
-        justify-content: space-around;
-    }
-    .Title {
-        color: #00D4FF;
-    }
-    .Header {
-        font-weight: bold;
-    }
+  .Title {
+    color: #00D4FF;
+  }
+  
+  .Header {
+    font-weight: bold;
+  }
 }
 .Content, 
 .Image, 
 .Text {
-    display: inherit;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
  
 }
 
@@ -107,37 +130,40 @@
 
 
 .Text {
-    flex-direction: column;
-    align-items: baseline;
-    width: 35%;
-    height: auto;
+  flex-direction: column;
+  align-items: baseline;
+  width: 35%;
+  height: auto;
 }
 
 .Image {
-    object-fit: cover;
-    width:65%;    
+  object-fit: cover;
+  width:65%;    
 }
 
 .Links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    a {
-        display:  inherit;
-        width: 7%;
-    }
-    .Image {
-        width: 100% !important;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    display:  inherit;
+    width: 7%;
+  }
+
+  .Image {
+    width: 100% !important;
+  }
 
 }
 @media (max-width: 1080px) {
-    .AboutPage, 
-    .HomePage{
-        .Text, 
-        .Image {
-            width: 100% !important;
-        }
+  .AboutPage, 
+  .HomePage{
+    
+    .Text, 
+    .Image {
+      width: 100% !important;
     }
+  }
 }

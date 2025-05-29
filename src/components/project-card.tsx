@@ -1,10 +1,14 @@
+import Button from "./button";
+
 type ProjectCardProps = {
     image: string;
     header: string;
     body: string;
+    onClick?: () => void;
+
 }
 
-const Project_card = ({image, header, body}: ProjectCardProps) => {
+const Project_card = ({image, header, body, onClick}: ProjectCardProps) => {
     return (
         <div className="project-card">
             <div className='Image'>
@@ -18,6 +22,11 @@ const Project_card = ({image, header, body}: ProjectCardProps) => {
                 <div className="Body">
                     <text>{body}</text>
                 </div>
+                <Button 
+                    onClick={onClick}
+                    name="ViewMyWork"
+                    label='View'
+                />
             </div>
     </div>
     )
