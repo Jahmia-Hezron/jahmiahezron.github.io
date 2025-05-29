@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom';
+import Button from './button';
 
 const Nav_bar = () => {
   const location = useLocation();
@@ -29,7 +30,7 @@ const Nav_bar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="/" className="btn btn-ghost normal-case text-xl">RESUME</a>
+       <a href='/jahmia Heron - resume.pdf' download> <Button label='RESUME' /></a>
       </div>
     </nav>
   );

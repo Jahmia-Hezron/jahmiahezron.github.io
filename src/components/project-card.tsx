@@ -8,7 +8,7 @@ const Project_card = ({image, header, body}: ProjectCardProps) => {
     return (
         <div className="project-card">
             <div className='Image'>
-                <img src={image} alt="Placeholder" />
+                <img src={image} alt="Placeholder" loading='eager' decoding='async' />
             </div>
              <div className="Text">
                 < div className="Header">

@@ -34,10 +34,6 @@ const Experience = () => {
                     </div>
                 ))}
                 </div>
-
-                <div className="Image">
-                <img src="https://via.placeholder.com/150" alt="Placeholder" />
-                </div>
             </div>
         </div>
     );

@@ -8,34 +8,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
+    background-color: #F4F4F7;
+    
 }
 .navbar, .NavSideButton {
     position: fixed;
     z-index: 3;
 }
-.navbar-end, 
-.project-card, 
-.NavSideButton {
-    color: white;
-    color: white;
-    background-color: black;
-    background-color: black;
-}
-.project-card, 
-.TechStackCard {
-    margin: 0.5rem;
-    padding: 1rem;
-    border: solid 0.08rem black;
-    border-radius: 0.5rem;
-    .Image {
-        object-fit: cover;
-        display: block;
-    }
-     .Text {
-        margin: 0 !important;
-        padding: 1rem;
-    }
-}
+
 .navbar {
     padding: 1rem 10%;
     width: -webkit-fill-available;
@@ -45,6 +25,7 @@
     padding: 0rem;
 
     li {
+        color: #212121;
         padding-right: 2.8rem;
     }
 }
@@ -55,15 +36,11 @@ a {
     padding-bottom: 0.2rem;
     
 }
-.navbar-end {
-    padding: 1rem 4rem;
-    font-weight: bolder;
-   
-}
+
 .active-link {
   font-weight: bold;
-  color: rosybrown; 
-  border-bottom: 2px solid rosybrown;
+  color: #00D4FF; 
+  border-bottom: 2px solid #00D4FF;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
@@ -123,6 +100,29 @@ a {
       transform: translateY(-50%) scale(1);
     }
   }
+
+.navbar-end, 
+.project-card, 
+.NavSideButton, button {
+    color: white;
+    background-color: #3F51B5;
+}
+.project-card, 
+.TechStackCard {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: solid 0.08rem transparent;
+    border-radius: 0.5rem;
+    box-shadow: #21212142  0.1rem 0.5rem 0.6rem;
+    .Image {
+        object-fit: cover;
+        display: block;
+    }
+     .Text {
+        margin: 0 !important;
+        padding: 1rem;
+    }
+}
   
 .project-card {
     width: 24rem;
@@ -157,19 +157,37 @@ a {
 }
 
 .TechStackCard {
-    width: 20rem;
-    height: 18rem;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 18rem;
+    height: 6rem;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E0E0E0;
+    margin-bottom: 1rem;
+    .Text {
+      align-items: start !important;
+      width: 60% !important;
+      .Header, .Body {
+        padding: 0;
+      }
+      
+    }
     .Image {
-        width: 40%;
-        height: 40%;
+        width: 20%;
+        height: 60%;
         border:  inherit;
         border-radius: 100%;
-
+     
     }
 }
 
 .IconButton {
     padding: 2rem;
+}
+
+button {
+  padding: 1rem 4rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
 }

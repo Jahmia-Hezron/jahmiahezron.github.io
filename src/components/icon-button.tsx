@@ -1,5 +1,5 @@
 interface IconButtonProps {
-  icon: React.ReactNode;
+  icon: string;
   link: string;
   ariaLabel: string;
 }
@@ -13,7 +13,9 @@ const IconButton: React.FC<IconButtonProps> = ({ icon, link, ariaLabel }) => {
       aria-label={ariaLabel}
       className="IconButton"
     >
-      {icon}
+        <div className='Image'>
+            <img src={icon} alt="Placeholder" loading='eager' decoding='async' />
+        </div>
     </a>
   );
 };
