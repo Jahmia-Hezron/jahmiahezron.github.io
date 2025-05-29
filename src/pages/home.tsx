@@ -1,4 +1,21 @@
+import { useNavigate } from 'react-router-dom';
+import cover from '../assets/images/headshot.png';
+import Button from '../components/button';
+
+
+  
 const Home = () => {
+  const navigate = useNavigate();
+
+  const goToProjectsPage = () => {
+    navigate('/projects'); 
+  };
+  const goToContactPage = () => {
+    navigate('/contact'); 
+  };
+
+
+
   return (
     <div className='HomePage'>
       <div className='Content'>
@@ -10,11 +27,15 @@ const Home = () => {
                 <text>SOFTWARE ENGINEER</text>
             </div>
             <div className="Body">
-                 <text>I design and build fast, scalable, and user-friendly software using tools like Golang, Flutter, and React. Whether it's a web app, mobile solution, or DevOps setup, I love solving real-world problems through clean code.</text>
+                 <text>I design and build fast, scalable, and user-friendly software using tools like<b> Golang, Flutter, and React.</b> Whether it's a web app, mobile solution, or DevOps setup, I love solving real-world problems through clean code.</text>
+            </div>
+            <div className='CtaButtons'>
+                <Button name='ViewMyWork' label='View My Work' onClick={goToProjectsPage} />
+                <Button label='Get In Touch' onClick={goToContactPage} />
             </div>
         </div>
         <div className='Image'>
-          <img src="https://via.placeholder.com/150" alt="Placeholder" />
+          <img src={cover} alt="Placeholder" loading='eager' decoding='async' />
         </div>
       </div>
     </div>

@@ -1,4 +1,26 @@
 import TechStackCard from "../components/tech-stack-card";
+import react from "../assets/icons/React.png"
+import html from "../assets/icons/HTML5.png"
+import css from "../assets/icons/CSS3.png"
+import js from "../assets/icons/JavaScript.png"
+import ts from "../assets/icons/TypeScript.png"
+import tailwind from "../assets/icons/Tailwind CSS.png"
+import flutter from "../assets/icons/Flutter.png"
+import dart from "../assets/icons/Dart.png"
+import android from "../assets/icons/Android.png"
+import golang from "../assets/icons/Go.png"
+import python from "../assets/icons/Python.png"
+import nodejs from "../assets/icons/Node.js.png"
+import postman from "../assets/icons/Postman.png"
+import postgress from "../assets/icons/PostgresSQL.png"
+import mysql from "../assets/icons/MySQL.png"
+import docker from "../assets/icons/Docker.png"
+import gitactions from "../assets/icons/GitHub Actions.png"
+import git from "../assets/icons/Git.png"
+import figma from "../assets/icons/Figma.png"
+import adobecc from "../assets/icons/62a36ba86209494ec2b1706c.png"
+import adobexd from "../assets/icons/Adobe XD.png"
+
 
 const Tech_stack = () => {
     return (
@@ -13,92 +35,108 @@ const Tech_stack = () => {
                     </div>
                 </div>
                 <TechStackCard
-                    image="/images/tech-stack/react.png"
-                    header="React TS/JS"
+                    image={react}
+                    header="React"
                     body="Web Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={html}
                     header="HTML"
                     body="Web Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={css}
                     header="CSS/SCSS"
                     body="Web Development"
                 />
+                <TechStackCard
+                    image={js}
+                    header="JavaScript"
+                    body="Web Development"
+                />
+                <TechStackCard
+                    image={ts}
+                    header="TypScript"
+                    body="Web Development"
+                />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={tailwind}
                     header="Tailwind"
                     body="Web Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={flutter}
                     header="Flutter"
                     body="Front-end Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={dart}
+                    header="Dart"
+                    body="Front-end Development"
+                />
+                 <TechStackCard
+                    image={android}
+                    header="Android"
+                    body="Front-end Development"
+                />
+                 <TechStackCard
+                    image={golang}
                     header="Golang"
                     body="Back-end Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={python}
                     header="Python"
                     body="Back-end Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={nodejs}
                     header="Node js"
                     body="Back-end Development"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={postman}
                     header="Postman"
                     body="Data Testing"
                 />
                 <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={postgress}
                     header="PostgresSQL"
                     body="Data Storange & Auth"
                 />
                 <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={mysql}
                     header="MySQL"
                     body="Data Storange & Auth"
                 />
                 <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={docker}
                     header="Docker"
                     body="Dev Opps"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={gitactions}
                     header="Github Actions"
                     body="Dev Opps"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={git}
                     header="Git"
                     body="Version Control"
                 />
-                <TechStackCard
-                    image="/images/tech-stack/react.png"
-                    header="3DS Max"
-                    body="Design"
-                />
+
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={figma}
                     header="Figma"
                     body="Design"
                 />
                  <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={adobexd}
                     header="Adobe XD"
                     body="Design"
                 />
                 <TechStackCard
-                    image="/images/tech-stack/react.png"
+                    image={adobecc}
                     header="Adobe CC"
                     body="Design"
                 />

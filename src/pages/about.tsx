@@ -1,11 +1,11 @@
-import React from 'react';
+import portrait from '../assets/images/protrait.jpg';
 
 const About = () => {
   return (
     <div className="AboutPage">
       <div className="Content">
         <div className="Image">
-          <img src="https://via.placeholder.com/150" alt="Placeholder" />
+          <img src={portrait} alt="Placeholder" loading='eager' decoding='async' />
         </div>
 
         <div className="Text">

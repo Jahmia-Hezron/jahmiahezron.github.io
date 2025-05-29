@@ -50,6 +50,9 @@ const MainLayout = () => {
       {routeOrder.includes(location.pathname) && (
         <PageNavigator routes={routeOrder} />
       )}
+      <div className="Footer">
+        <text>© 2024 Jahmia Hezron. All rights reserved.</text>
+      </div>
     </>
   );
 };
