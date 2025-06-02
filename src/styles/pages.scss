@@ -2,17 +2,15 @@
 .AboutPage, 
 .ProjectsPage, 
 .TechStackPage, 
-.ExperiencePage, 
-.ContactPage {
+.ExperiencePage {
   display: flex;
   align-content: center;
   justify-content: center;
   background-color: #F4F4F7;
   position: relative;
-  padding-top: 6.5rem;
   padding-right: 10%;
   padding-left: 10%;
-  min-height: 90vh;
+  min-height: 80vh;
   border-radius: 0.5rem;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
   position: relative;
@@ -25,6 +23,7 @@
 .TechStackPage {
   .Content {
     justify-content: center;
+    width: 100%;
     
     .Text {
       width: 100%;
@@ -42,6 +41,7 @@
 }
 .HomePage {
   .Text {
+    padding-top: 8rem;
     .CtaButtons {
       display: flex;
       justify-content: space-between;
@@ -62,6 +62,7 @@
 }
 
 .AboutPage {
+padding-top: 4rem;
   background-color: #E0E0E0;
   
   .Image {
@@ -78,6 +79,9 @@
     width: 50%;
     justify-content: start;
     margin: 0 !important;
+    .Header {
+      margin-top: 15%;
+    }
   }
 }
 
@@ -97,6 +101,7 @@
 }
 
 .ExperiencePage {
+  padding-top: 4rem;
   .Text {
     width: 100%;
     align-items: center;
@@ -132,13 +137,13 @@
 .Text {
   flex-direction: column;
   align-items: baseline;
-  width: 35%;
+  width: 40%;
   height: auto;
 }
 
 .Image {
   object-fit: cover;
-  width:65%;    
+  width:60%;    
 }
 
 .Links {
@@ -149,7 +154,7 @@
 
   a {
     display:  inherit;
-    width: 7%;
+    width: 15%;
   }
 
   .Image {

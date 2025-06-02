@@ -8,9 +8,8 @@ import './styles/components.scss';
 
 import Home from './pages/home';
 import About from './pages/about';
-import Contact from './pages/contact';
 import Projects from './pages/projects';
-import Tech_stack from './pages/tech-stack';
+import TechStack from './pages/tech-stack';
 import Experience from './pages/experience';
 
 import MainLayout from './main-layout';
@@ -27,9 +26,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/tech-stack" element={<Tech_stack />} />
+          <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </AnimatePresence>

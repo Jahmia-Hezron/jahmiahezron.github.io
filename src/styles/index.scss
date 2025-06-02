@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.BodyContainer {
+  margin-top: 7.7rem;
+  overflow-x: hidden;
+}
+
 .Header {
   font-size: x-large;
   font-weight: bolder;
@@ -43,7 +48,7 @@ code {
 }
 
 .Spine {
-  padding: 0.2rem;
+  padding: 0.1rem;
   margin-right: 2rem;
   background-color: #00D4FF;
   border: solid 0.1rem transparent;
