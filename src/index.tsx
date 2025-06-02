@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import './styles/index.scss';
@@ -36,11 +36,12 @@ const App = () => {
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <BrowserRouter>
+  <Router>
     <NavigationProvider>
       <App />
     </NavigationProvider>
-  </BrowserRouter>
+  </Router>
+
 );
 
 reportWebVitals();
