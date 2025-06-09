@@ -39,12 +39,12 @@ const Tech_stack = () => {
                     header="React"
                     body="Web Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={html}
                     header="HTML"
                     body="Web Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={css}
                     header="CSS/SCSS"
                     body="Web Development"
@@ -59,42 +59,42 @@ const Tech_stack = () => {
                     header="TypScript"
                     body="Web Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={tailwind}
                     header="Tailwind"
                     body="Web Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={flutter}
                     header="Flutter"
                     body="Front-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={dart}
                     header="Dart"
                     body="Front-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={android}
                     header="Android"
                     body="Front-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={golang}
                     header="Golang"
                     body="Back-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={python}
                     header="Python"
                     body="Back-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={nodejs}
                     header="Node js"
                     body="Back-end Development"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={postman}
                     header="Postman"
                     body="Data Testing"
@@ -114,23 +114,23 @@ const Tech_stack = () => {
                     header="Docker"
                     body="Dev Opps"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={gitactions}
                     header="Github Actions"
                     body="Dev Opps"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={git}
                     header="Git"
                     body="Version Control"
                 />
 
-                 <TechStackCard
+                <TechStackCard
                     image={figma}
                     header="Figma"
                     body="Design"
                 />
-                 <TechStackCard
+                <TechStackCard
                     image={adobexd}
                     header="Adobe XD"
                     body="Design"
@@ -143,6 +143,6 @@ const Tech_stack = () => {
             </div>
         </div>
     );
-    }
+}
 
 export default Tech_stack;

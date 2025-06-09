@@ -15,6 +15,7 @@ import Experience from './pages/experience';
 import MainLayout from './main-layout';
 import reportWebVitals from './reportWebVitals';
 import { NavigationProvider } from './scripts/navigation-context';
+import SEO from './scripts/seo';
 
 const App = () => {
   const location = useLocation();
@@ -36,12 +37,14 @@ const App = () => {
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <Router>
-    <NavigationProvider>
-      <App />
-    </NavigationProvider>
-  </Router>
-
+  <>
+    <SEO />
+    <Router>
+      <NavigationProvider>
+        <App />
+      </NavigationProvider>
+    </Router>
+  </>
 );
 
 reportWebVitals();

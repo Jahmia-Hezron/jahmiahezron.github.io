@@ -6,6 +6,7 @@ import layingo from "../assets/images/layingo.png";
 import muhhunuza from "../assets/images/muhumuzabrian.png";
 import comingsoon from "../assets/images/comming-soon.png"
 
+
 const Projects = () => {
     return (
         <div className="ProjectsPage">

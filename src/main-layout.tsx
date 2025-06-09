@@ -30,7 +30,7 @@ const MainLayout = () => {
   };
 
   const handleSwipe = (offsetX: number) => {
-    const threshold = 100; // Minimum distance to trigger swipe
+    const threshold = 100;
     const currentIndex = routeOrder.indexOf(location.pathname);
 
     if (offsetX < -threshold && currentIndex < routeOrder.length - 1) {

@@ -1,9 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import cover from '../assets/images/headshot.png';
 import Button from '../components/button';
-// import IconButton from '../components/icon-button';
-
-
 
 const Home = () => {
   const navigate = useNavigate();
@@ -17,9 +14,6 @@ const Home = () => {
   // const goToWhatsApp = () => {
   //   window.location.href = "https://wa.me/256752580722";
   // };
-
-
-
 
   return (
     <div className='HomePage'>
